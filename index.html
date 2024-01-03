@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO List</title>
+    <style>
+        /* CSS styles for the footer */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+            line-height: 0.2;
+        }
+
+        /* Style for the text within the footer */
+        footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <div class="heading">
+            <div class="heading__title">TODO</div>
+            <div class="heading__sub-title">make my day</div>
+        </div>
+        <div class="todo">
+            <ul class="todo__list">
+                <li class="todo__item">
+                    <span class="todo__icon-tick material-icons">check_box_outline_blank</span>
+                    <span class="todo__text todo__text">Sleep</span>
+                    <span class="todo__icon-delete material-icons">delete_outline</span>
+                </li>
+            </ul>
+        </div>
+        <div class="new">
+            <form class="new__form">
+                <input class="new__input" type="text" name="new_text" placeholder="Add item ...">
+            </form>
+            <span class="new__submit material-icons">control_point</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <footer>
+        <p>Made by Soumyodeep Nayak</p>
+    </footer>
+</body>
+</html>
